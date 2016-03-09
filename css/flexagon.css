@@ -1,0 +1,11 @@
+body {
+  background-image: url("http://orig02.deviantart.net/5fb3/f/2013/097/0/1/tron__legacy_style_wallpaper_by_inityx-d60ru17.png");
+}
+
+#game-canvas {
+  margin:200px auto;
+  display: block;
+  border-radius: 5px;
+  width: 800px;
+  height: 600px;
+}
