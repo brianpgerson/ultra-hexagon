@@ -9,7 +9,7 @@ function Wall(optionsHash) {
 }
 
 Wall.prototype.move = function() {
-  this.distance -= (2 + this.globalSpeed);
+  this.distance -= (3 + this.globalSpeed);
 };
 
 Wall.prototype.draw = function (ctx) {
