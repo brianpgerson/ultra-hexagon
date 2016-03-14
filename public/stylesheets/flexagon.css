@@ -1,0 +1,115 @@
+body {
+  background-image: url("http://orig02.deviantart.net/5fb3/f/2013/097/0/1/tron__legacy_style_wallpaper_by_inityx-d60ru17.png");
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#game-canvas {
+  border-radius: 5px;
+  width: 800px;
+  height: 600px;
+}
+
+#header-image {
+  width: 1000px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  background-image: url('./ultraLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#timer {
+  color: white;
+  width: 12%;
+  min-width: 100px;
+  text-align: left;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2em;
+  background-color: rgba(0,0,0,.8);
+  padding: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.close-tab {
+  float: right;
+  height: 10px;
+  width: 5px;
+  color: red;
+}
+
+.close-tab:hover {
+  cursor: pointer;
+}
+
+.open-tab {
+  padding: 10px;
+  background-color: rgba(40,70,0,.8);
+  color: #32cd32;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  font-size: 2em;
+  border-radius: 5px;
+}
+
+.green {
+  color: #32cd32;
+}
+
+#hidden {
+  width: 1px;
+  opacity: 0;
+}
+
+.instructions-tab {
+  width: 15%;
+  position: relative;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  background-color: rgba(0,0,0,.8);
+  padding: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  opacity: 1;
+  transition: opacity, 1s, ease;
+}
+
+#big-play-button {
+  border-radius: 35px;
+  height: 70px;
+  width: 70px;
+  padding: 0 18px;
+  display: block;
+  margin: auto;
+  font-size: 2.2em;
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  transition: color, 0.3s, ease-in-out;
+}
+
+.tunes {
+  text-align: center;
+  display: block;
+}
+.stupid {
+  padding: 0px 10px !important
+}
+
+#big-play-button:hover {
+  color: #ee017b;
+  cursor: pointer;
+}
+
+@media (max-height: 680px) {
+  #header-image {
+    width: 600px;
+    height: 150px;
+  }
+}

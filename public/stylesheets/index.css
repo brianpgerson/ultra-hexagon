@@ -1,0 +1,246 @@
+html {
+  font-family: 'Lato', sans-serif;
+  color: ghostwhite;
+}
+
+
+a {
+  text-decoration: none;
+  color: ghostwhite;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #ee017b;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1431965400057-a84b80cfdbff?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=497d291b990902624ab1321bef8590c8');
+  background-size: cover;
+}
+/*https://images.unsplash.com/photo-1432250681869-3784e3d5a99f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=10db4f8a7344923e7c216351ebfe1bab*/
+.circular-image {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/c_fill,h_550,w_550/v1457903742/im-brian.png');
+  background-size: contain;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  transition: filter, -webkit-filter 1s ease-in-out;
+  filter: grayscale(100%);
+  float: left;
+}
+
+.circular-image:hover {
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}
+
+.header {
+  width: 450px;
+  position: relative;
+  margin: 135px auto;
+  height: 150px;
+}
+
+h1, h2, h3 {
+  font-family: 'Bitter', serif;
+  text-align: center;
+  padding: 5px;
+  background-color: aliceblue;
+  color: #333;
+}
+
+.main-header-text {
+  padding: 0;
+  background-color: transparent;
+  color: #333;
+  float: left;
+  display: inline-block;
+  margin: 0 5%;
+  margin-top: 4%;
+}
+
+.group {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.horizontal-border {
+  height: 0;
+  width: 0;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  position: absolute;
+  left: 176px;
+  top: 70px;
+  transition: width, height, 0.5s ease-in-out;
+}
+
+.grow-wide {
+  width: 250px;
+}
+
+.grow-tall {
+  height: 150px;
+}
+
+.projects-container {
+  width: 60%;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.project-pic {
+  height: 150px;
+  width: 200px;
+  background-size: cover;
+  float: left;
+  margin-right: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.project {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  margin: 20px auto;
+  transition: background-color, 0.5s, ease-in-out;
+}
+.project:nth-child(2) .project-pic {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457913278/Screen_Shot_2016-03-13_at_4.54.17_PM_h6u7rf.png');
+}
+
+.project:nth-child(3) .project-pic {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457912663/flex.png');
+}
+
+.project:nth-child(4) .project-pic {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457914089/Screen_Shot_2016-03-13_at_5.07.24_PM_ysempc.png');
+}
+
+.project:nth-child(5) .project-pic {
+  background-image: url('https://pbs.twimg.com/profile_images/647259312193073152/q2pJM2Kv.png');
+}
+
+.project:nth-child(2):hover {
+  background-color: rgba(0, 123, 70, .6);
+}
+
+.project:nth-child(3):hover {
+  background-color: rgba(51, 51, 210, .6);
+}
+
+.project:nth-child(4):hover {
+  background-color: rgba(179, 102, 0, .6);
+}
+
+.project:nth-child(5):hover {
+  background-color: rgba(6, 68, 115, .6);
+}
+
+.project li, .project p {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.looking-for {
+  margin: 100px auto 50px auto;
+  padding: 0 20px 20px 20px;
+  border: 1px solid black;
+  width: 50%;
+}
+
+.looking-text {
+  padding: 10px;
+  background-color: rgba(0,0,0,.6);
+}
+
+.story-box-border {
+  width: 50%;
+  padding: 0 20px 20px 20px;
+  border: 1px solid black;
+  position: relative;
+  margin: -65px auto 100px auto;
+}
+
+.story-box {
+  padding: 20px;
+  background-color: rgba(0,0,0,.6);
+  height: 90%;
+  font-weight: lighter;
+  color: white;
+  transition: background-color, 0.5s, ease-in-out;
+}
+
+.story-box:hover {
+  background-color: rgba(6,16,115,.6);
+}
+
+.story-box p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+#connect-icons {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#connect-icons li {
+  border-radius: 15px;
+  background-color: ghostwhite;
+  padding: 1px;
+  transition: background-color, 0.5s, ease-in-out;
+}
+
+#connect-icons div {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+
+#connect-icons li:hover {
+  background-color: #FF9D1B;
+}
+
+#twitter {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457917936/1457921384_43-twitter_gqv9q1.png');
+}
+
+#facebook {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457917936/1457921366_46-facebook_vyzts3.png');
+}
+
+#linkedin {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457917936/1457921433_linkedin_circle_black_n4g2d0.png');
+}
+
+#github {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457918418/1457936404_github_circle_black_tecv1n.png');
+}
+
+#email{
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457919070/1457937055_circle_social-email-glyph_nvt5ey.png');
+}
+
+#tumbler {
+  background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457917936/1457921451_55-tumblr_ipgcfu.png');
+}
+
+#dumbpara {
+  margin-left: 15px;
+}

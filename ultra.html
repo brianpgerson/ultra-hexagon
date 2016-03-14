@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexagon</title>
+    <link rel="stylesheet" href="./stylesheets/flexagon.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js' charset="utf-8"></script>
+
+  </head>
+  <body>
+    <audio preload="auto" loop src="https://briansdopetracks.s3-us-west-1.amazonaws.com/tracks/audio/25e56fc5-8a10-4aaf-9440-6e99a0e9bd89.mp3">
+    </audio>
+    <header id="header-image"></header>
+
+    <div class="container">
+      <div class="open-tab" id="hidden">+</div>
+      <div class="instructions-tab">
+        <div class="close-tab">x</div>
+          <div class="instructions">
+          <br>
+          <p>
+            1 - SPACE to start<br><br>
+            2 - LEFT and RIGHT to move<br><br>
+            3 - EVADE WALLS for as long as you can.<br><br>
+            4 - SPEED and DIFFICULTY will increase...quickly<br><br>
+            5 - Only the FRONT EDGE of a wall will end your turn<br><br>
+            6 - GOOD LUCK<br><br>
+            <span class="green">PS - Headphones strongly advised. <br />
+              "q" for music control.
+            </span>
+          </p>
+        </div>
+      </div>
+
+
+      <canvas id="game-canvas" width="800" height="600"></canvas>
+
+      <h2 id="timer">
+        TIME ALIVE: <br />
+        <span class="green" id="running-timer">00.00</span> <br />
+        HIGH SCORE: <br />
+        <span class="green" id="high-score">00.00</span><br />
+        ALL TIME: <br />
+        <span class="green" id="all-time">86.48</span><br />
+        <br>
+        <span class="tunes">TUNES:</span><br />
+        <button id="big-play-button">▶</button>
+      </h2>
+      <script src="./javascripts/bundle.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
