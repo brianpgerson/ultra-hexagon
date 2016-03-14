@@ -1,6 +1,8 @@
 # Ultra Hexagon
 
-Ultra Hexagon is an object-oriented JavaScript and HTML5 canvas game inspired by Super Hexagon.
+[Ultra Hexagon][http://brianpgerson.github.io/public/ultra.html] is an object-oriented JavaScript and HTML5 canvas game inspired by Super Hexagon.
+
+http://brianpgerson.github.io/public/ultra.html
 
 ## How To Play
 
