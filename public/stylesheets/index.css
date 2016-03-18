@@ -18,10 +18,10 @@ a:hover {
 body {
   height: 100%;
   width: 100%;
-  background-image: url('https://images.unsplash.com/photo-1431965400057-a84b80cfdbff?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=497d291b990902624ab1321bef8590c8');
+  background-image: url('https://images.unsplash.com/photo-1432250681869-3784e3d5a99f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=10db4f8a7344923e7c216351ebfe1bab');
   background-size: cover;
 }
-/*https://images.unsplash.com/photo-1432250681869-3784e3d5a99f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=10db4f8a7344923e7c216351ebfe1bab*/
+/*https://images.unsplash.com/photo-1431965400057-a84b80cfdbff?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=497d291b990902624ab1321bef8590c8*/
 .circular-image {
   background-image: url('http://res.cloudinary.com/thadowg/image/upload/c_fill,h_550,w_550/v1457903742/im-brian.png');
   background-size: contain;
@@ -73,8 +73,7 @@ h1, h2, h3 {
 .horizontal-border {
   height: 0;
   width: 0;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 5px solid black;
   position: absolute;
   left: 176px;
   top: 70px;
@@ -83,6 +82,7 @@ h1, h2, h3 {
 
 .grow-wide {
   width: 250px;
+  border-right: 5px solid black;
 }
 
 .grow-tall {
@@ -90,10 +90,29 @@ h1, h2, h3 {
 }
 
 .projects-container {
-  width: 60%;
-  border: 1px solid black;
+  width: 70%;
+  min-width: 705px;
+  border: 5px solid black;
   margin: 0 auto;
+  background-color: rgba(255,255,255,0.4);
   padding: 0 20px;
+  position: relative;
+}
+
+.story-to-projects-border-el {
+  height: 105px;
+  position: absolute;
+  border-left: 5px solid black;
+  left: 200px;
+  top: -105px;
+}
+
+.projects-to-contact-border-el {
+  height: 105px;
+  position: absolute;
+  border-left: 5px solid black;
+  right: 100px;
+  top: -105px;
 }
 
 .project-pic {
@@ -115,70 +134,73 @@ h1, h2, h3 {
 .project {
   position: relative;
   width: 100%;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.8);
   margin: 20px auto;
   transition: background-color, 0.5s, ease-in-out;
 }
-.project:nth-child(2) .project-pic {
+.project:nth-child(3) .project-pic {
   background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457913278/Screen_Shot_2016-03-13_at_4.54.17_PM_h6u7rf.png');
 }
 
-.project:nth-child(3) .project-pic {
+.project:nth-child(4) .project-pic {
   background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457912663/flex.png');
 }
 
-.project:nth-child(4) .project-pic {
+.project:nth-child(5) .project-pic {
   background-image: url('http://res.cloudinary.com/thadowg/image/upload/v1457914089/Screen_Shot_2016-03-13_at_5.07.24_PM_ysempc.png');
 }
 
-.project:nth-child(5) .project-pic {
+.project:nth-child(6) .project-pic {
   background-image: url('https://pbs.twimg.com/profile_images/647259312193073152/q2pJM2Kv.png');
 }
 
-.project:nth-child(2):hover {
-  background-color: rgba(0, 123, 70, .6);
-}
-
 .project:nth-child(3):hover {
-  background-color: rgba(51, 51, 210, .6);
+  background-color: rgba(0, 123, 70, .8);
 }
 
 .project:nth-child(4):hover {
-  background-color: rgba(179, 102, 0, .6);
+  background-color: rgba(51, 51, 210, .8);
 }
 
 .project:nth-child(5):hover {
-  background-color: rgba(6, 68, 115, .6);
+  background-color: rgba(179, 102, 0, .8);
+}
+
+.project:nth-child(6):hover {
+  background-color: rgba(6, 68, 115, .8);
 }
 
 .project li, .project p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: lighter;
 }
 
-.looking-for {
+.contact {
   margin: 100px auto 50px auto;
   padding: 0 20px 20px 20px;
-  border: 1px solid black;
+  position: relative;
+  border: 5px solid black;
+  background-color: rgba(255,255,255,0.4);
   width: 50%;
 }
 
-.looking-text {
+.contact-text {
   padding: 10px;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.8);
 }
 
 .story-box-border {
   width: 50%;
   padding: 0 20px 20px 20px;
-  border: 1px solid black;
+  border: 5px solid black;
   position: relative;
+  background-color: rgba(255,255,255,0.4);
   margin: -65px auto 100px auto;
 }
 
 .story-box {
   padding: 20px;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.8);
   height: 90%;
   font-weight: lighter;
   color: white;
@@ -243,4 +265,78 @@ h1, h2, h3 {
 
 #dumbpara {
   margin-left: 15px;
+}
+
+@media (max-width: 700px) {
+  .story-box {
+    padding: 30px;
+    background-color: rgba(0,0,0,.8);
+    height: 90%;
+    font-weight: lighter;
+    color: white;
+    transition: background-color, 0.5s, ease-in-out;
+  }
+
+  .story-box-border {
+    width: 90%;
+    font-size: 2em;
+  }
+
+  .horizontal-border {
+    display: none;
+  }
+
+  .circular-image {
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+  }
+
+  .header {
+    width: 80%;
+    height: 150px;
+    font-size: 2em;
+    }
+
+  .projects-container {
+    width: 90%;
+    min-width: 0;
+  }
+
+  .project {
+    padding: 0 20px 20px 20px;
+    width: 90%;
+  }
+
+  .project-pic {
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .project-pic-link {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .project li, .project p {
+    clear: both;
+    font-size: 0.9em;
+  }
+
+  .project p {
+    margin-left: 25px;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
 }

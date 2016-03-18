@@ -102,6 +102,23 @@ body {
   padding: 0px 10px !important
 }
 
+.bottom {
+  width: 600px;
+  margin: 40px auto 0 auto;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0,0,0,.8);
+  letter-spacing: 2.5px;
+  line-height: 1.1em;
+  padding: 10px;
+}
+
+.bottom a {
+  color: #ee017b;
+  text-decoration: none;
+}
+
 #big-play-button:hover {
   color: #ee017b;
   cursor: pointer;
